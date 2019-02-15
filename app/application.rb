@@ -3,9 +3,9 @@ class Application
     resp = Rack::Response.new
     binding.pry
     time_now = Time.now
-    noon = DateTime.new(DateTime.now.year, 
-                        DateTime.now.month, 
-                        DateTime.now.day, 
+    noon = Time.new(Time.now.year, 
+                        Time.now.month, 
+                        Time.now.day, 
                         12, 0, 0)
                         
     if time_now < noon
