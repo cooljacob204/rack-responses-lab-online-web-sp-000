@@ -2,7 +2,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
     
-    time_now = DateTime.now
+    time_now = DateTime.now.getlocal
     noon = DateTime.new(DateTime.now.year, 
                         DateTime.now.month, 
                         DateTime.now.day, 
